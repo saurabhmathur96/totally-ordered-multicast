@@ -1,0 +1,63 @@
+Binding to tcp://*:4000
+Subscribed to 1702 for unicast
+Subscribed to 42 for multicast
+[OUT] 1703 tcp://localhost:4000 1 3621 MULTICAST message(MULTICAST, 1702, 1)
+[OUT] 1704 tcp://localhost:4000 2 3621 MULTICAST message(MULTICAST, 1702, 1)
+[IN] 1702 tcp://localhost:6000 1 3625 MULTICAST message(MULTICAST, 1704, 1)
+[OUT] 1703 tcp://localhost:4000 4 1910 ACK 3625
+[OUT] 1704 tcp://localhost:4000 5 1910 ACK 3625
+[IN] 1702 tcp://localhost:6000 4 1908 ACK 3621
+[IN] 1702 tcp://localhost:5000 3 1907 ACK 3621
+[IN] 1702 tcp://localhost:5000 6 1911 ACK 3625
+message(MULTICAST, 1702, 1)<- Message received by application 
+message(MULTICAST, 1704, 1)<- Message received by application 
+[OUT] 1704 tcp://localhost:4000 9 3463 UNICAST message(UNICAST, 1702, 2)
+[IN] 1702 tcp://localhost:5000 10 3624 MULTICAST message(MULTICAST, 1703, 2)
+[OUT] 1703 tcp://localhost:4000 12 1909 ACK 3624
+[OUT] 1704 tcp://localhost:4000 13 1909 ACK 3624
+[IN] 1702 tcp://localhost:6000 13 1911 ACK 3624
+message(MULTICAST, 1703, 2)<- Message received by application 
+[OUT] 1704 tcp://localhost:4000 15 3464 UNICAST message(UNICAST, 1702, 3)
+[IN] 1702 tcp://localhost:5000 17 3466 UNICAST message(UNICAST, 1703, 3)
+[IN] 1702 tcp://localhost:6000 16 3468 UNICAST message(UNICAST, 1704, 3)
+message(UNICAST, 1703, 3)<- Message received by application 
+message(UNICAST, 1704, 3)<- Message received by application 
+[OUT] 1703 tcp://localhost:4000 20 3465 UNICAST message(UNICAST, 1702, 4)
+[IN] 1702 tcp://localhost:5000 18 3626 MULTICAST message(MULTICAST, 1703, 4)
+[OUT] 1703 tcp://localhost:4000 22 1911 ACK 3626
+[OUT] 1704 tcp://localhost:4000 23 1911 ACK 3626
+[IN] 1702 tcp://localhost:6000 18 3628 MULTICAST message(MULTICAST, 1704, 4)
+[OUT] 1703 tcp://localhost:4000 25 1913 ACK 3628
+[OUT] 1704 tcp://localhost:4000 26 1913 ACK 3628
+[IN] 1702 tcp://localhost:6000 21 1913 ACK 3626
+[IN] 1702 tcp://localhost:5000 25 1914 ACK 3628
+message(MULTICAST, 1703, 4)<- Message received by application 
+message(MULTICAST, 1704, 4)<- Message received by application 
+[OUT] 1703 tcp://localhost:4000 29 3625 MULTICAST message(MULTICAST, 1702, 5)
+[OUT] 1704 tcp://localhost:4000 30 3625 MULTICAST message(MULTICAST, 1702, 5)
+[IN] 1702 tcp://localhost:6000 29 3629 MULTICAST message(MULTICAST, 1704, 5)
+[OUT] 1703 tcp://localhost:4000 32 1914 ACK 3629
+[OUT] 1704 tcp://localhost:4000 33 1914 ACK 3629
+[IN] 1702 tcp://localhost:5000 29 3627 MULTICAST message(MULTICAST, 1703, 5)
+[OUT] 1703 tcp://localhost:4000 35 1912 ACK 3627
+[OUT] 1704 tcp://localhost:4000 36 1912 ACK 3627
+[IN] 1702 tcp://localhost:6000 32 1914 ACK 3627
+[IN] 1702 tcp://localhost:5000 32 1915 ACK 3629
+[IN] 1702 tcp://localhost:6000 35 1912 ACK 3625
+[IN] 1702 tcp://localhost:5000 35 1911 ACK 3625
+message(MULTICAST, 1702, 5)<- Message received by application 
+message(MULTICAST, 1703, 5)<- Message received by application 
+message(MULTICAST, 1704, 5)<- Message received by application 
+[OUT] 1703 tcp://localhost:4000 41 2016 UNICAST EXIT
+[OUT] 1704 tcp://localhost:4000 42 2016 UNICAST EXIT
+[IN] 1702 tcp://localhost:5000 41 2017 UNICAST EXIT
+[IN] 1702 tcp://localhost:6000 41 2018 UNICAST EXIT
+EXIT<- Message received by application 
+['message(MULTICAST, 1702, 1)',
+ 'message(MULTICAST, 1704, 1)',
+ 'message(MULTICAST, 1703, 2)',
+ 'message(MULTICAST, 1703, 4)',
+ 'message(MULTICAST, 1704, 4)',
+ 'message(MULTICAST, 1702, 5)',
+ 'message(MULTICAST, 1703, 5)',
+ 'message(MULTICAST, 1704, 5)']
